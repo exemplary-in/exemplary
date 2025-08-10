@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Exemplary Shopping</title>
+  <meta name="description" content="Browse all products at Exemplary — clothing, electronics, accessories. Filter by category and find detailed product pages.">
+  <meta name="keywords" content="shopping for shop, shopsy, shop, trending, shopping, Exemplary">
+  <link rel="canonical" href="https://exemplary-in.github.io/exemplary">
+  <meta name="robots" content="index,follow">
+
+  <!-- Social -->
+  <meta property="og:title" content="Products — Exemplary">
+  <meta property="og:description" content="Browse all products at Exemplary — clothing, electronics, accessories.">
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Exemplary+Products">
+
+  <!-- Styles -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/styles.css" rel="stylesheet">
+
+  <!-- Breadcrumb structured data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://example.com/"},
+      {"@type":"ListItem","position":2,"name":"Products","item":"https://example.com/products.html"}
+    ]
+  }
+  </script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container d-flex justify-content-between align-items-center py-3">
+    <a href="index.html" class="brand text-decoration-none">Exemplary</a>
+    <nav aria-label="Main">
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="products.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="py-5">
+  <div class="container">
+    <nav aria-label="breadcrumb" class="mb-3">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Products</li>
+      </ol>
+    </nav>
+
+    <header class="d-flex justify-content-between align-items-center mb-4">
+      <div>
+        <h1 class="h4 mb-0">All Products</h1>
+        <p class="text-muted-small mb-0">Filter by category (static) or view product pages.</p>
+      </div>
+      <div class="d-flex gap-2">
+        <!-- No JS filtering — keep links to anchors -->
+        <a class="btn btn-outline-secondary btn-sm" href="#electronics">Electronics</a>
+        <a class="btn btn-outline-secondary btn-sm" href="#clothing">Clothing</a>
+        <a class="btn btn-outline-secondary btn-sm" href="#accessories">Accessories</a>
+      </div>
+    </header>
+
+    <section id="electronics" class="mb-5">
+      <h2 class="h5">Electronics</h2>
+      <div class="row g-4">
+        <div class="col-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100" itemscope itemtype="https://schema.org/Product">
+            <img src="20.jpg" class="card-img-top" alt="Noise-Canceling Headphones">
+            <div class="card-body">
+              <h3 class="h6" itemprop="name"><a href="product.html" class="text-decoration-none">Noise-Canceling Headphones</a></h3>
+              <p class="text-muted-small mb-1">Top-rated audio</p>
+              <p class="fw-bold mb-0">$129.99</p>
+            </div>
+          </article>
+        </div>
+        <!-- Add more electronics cards if you like -->
+      </div>
+    </section>
+
+    <section id="clothing" class="mb-5">
+      <h2 class="h5">Clothing</h2>
+      <div class="row g-4">
+        <div class="col-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100">
+            <img src="21.webp" class="card-img-top" alt="Classic White T-Shirt">
+            <div class="card-body">
+              <h3 class="h6"><a href="product.html" class="text-decoration-none">Classic White T-Shirt</a></h3>
+              <p class="text-muted-small mb-1">Comfort fit</p>
+              <p class="fw-bold mb-0">$19.99</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="accessories" class="mb-5">
+      <h2 class="h5">Accessories</h2>
+      <div class="row g-4">
+        <div class="col-6 col-md-4 col-lg-3">
+          <article class="card product-card h-100">
+            <img src="22.webp" class="card-img-top" alt="Stainless Water Bottle">
+            <div class="card-body">
+              <h3 class="h6"><a href="product.html" class="text-decoration-none">Stainless Water Bottle</a></h3>
+              <p class="text-muted-small mb-1">Keeps drinks cold 24h</p>
+              <p class="fw-bold mb-0">$24.50</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pagination (static) -->
+    <nav aria-label="Products pagination" class="mt-4">
+      <ul class="pagination">
+        <li class="page-item disabled"><span class="page-link">Previous</span></li>
+        <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+        <li class="page-item"><a class="page-link" href="products.html?page=2">2</a></li>
+        <li class="page-item"><a class="page-link" href="products.html?page=3">3</a></li>
+        <li class="page-item"><a class="page-link" href="products.html?page=2">Next</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</main>
+
+<footer class="site-footer mt-auto">
+  <div class="container text-center text-muted-small">© 2025 Exemplary</div>
+</footer>
+</body>
+</html>
